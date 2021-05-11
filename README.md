@@ -8,7 +8,7 @@ Circle CI is a continuos integration and delivery tools that be used on any clou
 
 Prerequisites
 
-- Forked the repo (njm3754/kata-bootstrap)
+- Forked the repo (njm3754/circleci-nodejs)
 - Cloned the repo on local machine
 - Run `npm ci` & `npm test` locally to verify that everything is running as expected
 
