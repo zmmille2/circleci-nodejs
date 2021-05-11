@@ -9,5 +9,5 @@ jobs:
       - checkout
       - run:
           #Add command name and bash commands to execute
-          name:
-          command:
+          name: Enter command description
+          command: echo "Add command here"
