@@ -1,0 +1,40 @@
+workflows:
+  version: 2
+  
+  build-test-deploy:
+    jobs:
+      - build-test
+      - hold-deploy:
+          type: approval
+          requires:
+            - build-test          
+      - deploy:
+          requires:
+            - hold-deploy       
+
+jobs:
+  build-test:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run build
+          command: npm build    
+      - run:
+          name: Run Tests
+          command: npm test
+
+  deploy:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run:
+          name: Deployment
+          command: echo "SUCCESS - App deployment completed"
