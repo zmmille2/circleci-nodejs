@@ -28,7 +28,7 @@ The goal of this sub task is to run `npm install`, `npm build` and `npm test` co
 
 The run should look something like this
 
-![alt text](./images/CC1.png)
+![alt text](./images/CC1.PNG)
 
 As you can notice the there is keyword `workflow` and the reason this generic name appears is because we haven`t setup workflows yet.
 In simple terms, workflows allow you to set rules for defining a collection of jobs and their run order.
@@ -41,7 +41,7 @@ So, next step will be to add the following workflow block on the top of the code
       jobs:
         - (Add name of the job here)
 
-![alt text](./images/CC2.png)
+![alt text](./images/CC2.PNG)
 
 ## 3 - Sequential Job Execution
 
