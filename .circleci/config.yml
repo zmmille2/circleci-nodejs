@@ -6,7 +6,6 @@ workflows:
     jobs:
       - zachs-awesome-build
       - zachs-epic-deploy:
-          type: approval
           requires:
            - zachs-awesome-build
 
