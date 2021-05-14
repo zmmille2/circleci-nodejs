@@ -17,3 +17,12 @@ jobs:
           #Add command name and bash commands to execute
           name: Enter command description
           command: echo "Add command here"
+  zachs-epic-deploy:
+      working_directory: ~/project
+      docker:
+      - image: circleci/node:8
+      steps:
+      - checkout
+      - run:
+          name: Deployment
+          command: echo "SUCCESS - App deployment completed"
