@@ -5,6 +5,7 @@ workflows:
   zachs_cool_workflow:
     jobs:
       - zachs-awesome-build
+      - zachs-epic-deploy
 
 jobs:
   zachs-awesome-build:
@@ -18,11 +19,11 @@ jobs:
           name: Enter command description
           command: echo "Add command here"
   zachs-epic-deploy:
-      working_directory: ~/project
-      docker:
-      - image: circleci/node:8
-      steps:
-      - checkout
-      - run:
-          name: Deployment
-          command: echo "SUCCESS - App deployment completed"
+    working_directory: ~/project
+    docker:
+    - image: circleci/node:8
+    steps:
+    - checkout
+    - run:
+        name: Deployment
+        command: echo "SUCCESS - App deployment completed"
