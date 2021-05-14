@@ -5,7 +5,10 @@ workflows:
   zachs_cool_workflow:
     jobs:
       - zachs-awesome-build
-      - zachs-epic-deploy
+      - zachs-epic-deploy:
+          type: approval
+          requires:
+           - zachs-awesome-build
 
 jobs:
   zachs-awesome-build:

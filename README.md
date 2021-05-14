@@ -65,4 +65,4 @@ Therefore, we need to make sure that the deployment job waits for the successful
 In a real life scenario it would be ideal if you could verify if all the builds and tests are passing before Circle CI does deployment.
 So, that is why we need to add a manual approval button that waits for the user to click `Approve` before kicking in deployment.
 
-Follow this [documentation](https://circleci.com/docs/2.0/workflows/?utm_medium=SEM&utm_source=gnb&utm_campaign=SEM-gb-DSA-Eng-uscan&utm_content=&utm_term=dynamicSearch-&gclid=Cj0KCQjws-OEBhCkARIsAPhOkIZGYE3L0OMR6SumDhQCQ9xW_wxSnFd6uW-zuJ4ASC8NComBDWhKQdkaAsVrEALw_wcB) to create manual approval step to hold the deployment.
+Follow this [documentation](https://circleci.com/docs/2.0/workflows/?utm_medium=SEM&utm_source=gnb&utm_campaign=SEM-gb-DSA-Eng-uscan&utm_content=&utm_term=dynamicSearch-) to create manual approval step to hold the deployment.
