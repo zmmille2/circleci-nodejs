@@ -1,7 +1,13 @@
 version: 2  
 
+workflows:
+  version: 2
+  zachs_cool_workflow:
+    jobs:
+      - zachs-awesome-build
+
 jobs:
-  build:
+  zachs-awesome-build:
     working_directory: ~/project
     docker:
       - image: circleci/node:8
